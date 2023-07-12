@@ -1,5 +1,7 @@
 # clickstream_sessionization
-Created session logic using SQL for users in the TurboTax &amp; Quickbooks Live products
+NOTE***: Certain information has been redacted/changed to protect proprietary information
+
+Created session logic using SQL for users in the TurboTax &amp; Quickbooks Live products. With this SQL script, I created an automated job using SuperGlue, which refreshes the table daily in the AWS datalake to be consumed by other analysts
 
 ## Use Case
 Users in these products are constantly going from one section of the product to the other. This behavior is tracked using clickstream, which produces hundreds of millions, and sometimes billions, of data points. The goal was to create a framework which tracks user behavior in a certain area of the product, and creates unique sessions for each interaction
