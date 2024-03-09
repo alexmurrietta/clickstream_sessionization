@@ -16,7 +16,7 @@ with clickstream as (
   ,object
   ,screen
   ,widget_name
-  from schema.clickstream_customersuccess as cs
+  from schema.clickstream_data as cs
   where year = '2022'
   and expert_id is not null
   and action = 'engaged'
@@ -34,7 +34,7 @@ with clickstream as (
   ,object
   ,screen
   ,widget_name
-  from schema.clickstream_customersuccess as cs
+  from schema.clickstream_data as cs
   where year = '2023'
   and expert_id is not null
   and action = 'engaged'
